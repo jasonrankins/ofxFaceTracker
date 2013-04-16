@@ -325,6 +325,18 @@ void ofxFaceTracker::setUseInvisible(bool useInvisible) {
 	this->useInvisible = useInvisible;
 }
 
+int ofxFaceTracker::getAttempts() {
+	return this->attempts;
+}
+
+int ofxFaceTracker::getIterations() {
+	return this->iterations;
+}
+
+double ofxFaceTracker::getRescale() {
+    return this->rescale;
+}
+
 void ofxFaceTracker::updateObjectPoints() {
 	const Mat& mean = tracker._clm._pdm._M;
 	const Mat& variation = tracker._clm._pdm._V;

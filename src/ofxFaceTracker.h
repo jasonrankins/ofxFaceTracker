@@ -86,6 +86,10 @@ public:
 	void setTolerance(float tolerance);
 	void setAttempts(int attempts);
 	void setUseInvisible(bool useInvisible);
+    
+    int getAttempts();
+    int getIterations();
+    double getRescale();
 	
 protected:
 	void updateObjectPoints();
